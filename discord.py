@@ -1,9 +1,11 @@
 import asyncio
 import discord
+import os
 
 client = discord.Client()
 
-token = "2CLlVeVHwN3st_2hzDx5DSi3MaocbebQ"
+access_token = os.envirom["BOT_TOKEN"]
+token = "access_token"
 
 @client.event
 async def on_ready():
@@ -24,5 +26,5 @@ async def on_message(message):
 
         if message.content.startswith('ㄹ!커맨드'): 
         await client.send_message(channel, '아직 생각중...')
-
-client.run(2CLlVeVHwN3st_2hzDx5DSi3MaocbebQ)
+access_token = os.envirom["BOT_TOKEN"]
+client.run('access_token')
